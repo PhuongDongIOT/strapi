@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurant_menus",
+  "info": {
+    "name": "RestaurantMenu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "decimal"
+    },
+    "classes": {
+      "via": "restaurant_menus",
+      "collection": "class"
+    }
+  }
+}
