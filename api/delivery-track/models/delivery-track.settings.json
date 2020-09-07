@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery_tracks",
+  "info": {
+    "name": "DeliveryTrack"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Serial": {
+      "type": "string"
+    },
+    "bills": {
+      "collection": "bill",
+      "via": "delivery_track"
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "EstimatedTime": {
+      "type": "time"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Firstname": {
+      "type": "string"
+    },
+    "Lastname": {
+      "type": "string"
+    },
+    "Username": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    }
+  }
+}

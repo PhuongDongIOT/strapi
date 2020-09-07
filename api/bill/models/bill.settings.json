@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bills",
+  "info": {
+    "name": "Bill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "order": {
+      "model": "order"
+    },
+    "Amount": {
+      "type": "float"
+    },
+    "Discount": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "delivery_track": {
+      "via": "bills",
+      "model": "delivery-track"
+    }
+  }
+}

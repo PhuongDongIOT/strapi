@@ -20,7 +20,7 @@
       "via": "restaurants"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"

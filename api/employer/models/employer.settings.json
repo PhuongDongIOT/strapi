@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employers",
+  "info": {
+    "name": "Employer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "UserName": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "restaurant": {
+      "model": "restaurant"
+    },
+    "position": {
+      "via": "employers",
+      "model": "position"
+    }
+  }
+}

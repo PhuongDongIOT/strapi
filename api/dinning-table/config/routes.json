@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dinning-tables",
+      "handler": "dinning-table.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dinning-tables/count",
+      "handler": "dinning-table.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dinning-tables/:id",
+      "handler": "dinning-table.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dinning-tables",
+      "handler": "dinning-table.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dinning-tables/:id",
+      "handler": "dinning-table.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dinning-tables/:id",
+      "handler": "dinning-table.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

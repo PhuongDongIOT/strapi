@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_types",
+  "info": {
+    "name": "SectionType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "section": {
+      "via": "section_types",
+      "model": "section"
+    }
+  }
+}

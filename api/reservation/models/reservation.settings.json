@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "name": "Reservation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "customer": {
+      "model": "customer"
+    },
+    "dinning_table": {
+      "model": "dinning-table"
+    }
+  }
+}

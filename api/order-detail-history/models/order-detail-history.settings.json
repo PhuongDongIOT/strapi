@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_detail_histories",
+  "info": {
+    "name": "OrderDetailItemHistory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "menu_item": {
+      "model": "menu-item"
+    },
+    "Quatity": {
+      "type": "integer"
+    },
+    "Price": {
+      "type": "float"
+    },
+    "order_detail": {
+      "model": "order-detail",
+      "via": "order_detail_histories"
+    }
+  }
+}
