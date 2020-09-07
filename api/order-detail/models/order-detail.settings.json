@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_details",
+  "info": {
+    "name": "OrderDetail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Serial": {
+      "type": "string"
+    },
+    "order_detail_histories": {
+      "via": "order_detail",
+      "collection": "order-detail-history"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_types",
+  "info": {
+    "name": "OrderType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

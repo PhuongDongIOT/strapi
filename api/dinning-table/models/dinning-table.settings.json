@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dinning_tables",
+  "info": {
+    "name": "DinningTable"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "category": {
+      "model": "category",
+      "via": "dinning_tables"
+    },
+    "ChairCount": {
+      "type": "integer"
+    },
+    "dinning_table_track": {
+      "via": "dinning_tables",
+      "model": "dinning-table-track"
+    }
+  }
+}

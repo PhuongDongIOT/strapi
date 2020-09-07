@@ -18,6 +18,10 @@
     "restaurants": {
       "via": "category",
       "collection": "restaurant"
+    },
+    "dinning_tables": {
+      "via": "category",
+      "collection": "dinning-table"
     }
   }
 }

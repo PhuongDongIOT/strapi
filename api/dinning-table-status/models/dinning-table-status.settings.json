@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dinning_table_statuses",
+  "info": {
+    "name": "DinningTableStatus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

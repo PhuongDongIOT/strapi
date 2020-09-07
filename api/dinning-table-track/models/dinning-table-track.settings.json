@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dinning_table_tracks",
+  "info": {
+    "name": "DinningTableTrack"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Seial": {
+      "type": "string"
+    },
+    "dinning_tables": {
+      "collection": "dinning-table",
+      "via": "dinning_table_track"
+    },
+    "orders": {
+      "collection": "order",
+      "via": "dinning_table_track"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

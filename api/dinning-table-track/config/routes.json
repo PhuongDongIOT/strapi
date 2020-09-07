@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dinning-table-tracks",
+      "handler": "dinning-table-track.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dinning-table-tracks/count",
+      "handler": "dinning-table-track.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dinning-table-tracks/:id",
+      "handler": "dinning-table-track.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dinning-table-tracks",
+      "handler": "dinning-table-track.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dinning-table-tracks/:id",
+      "handler": "dinning-table-track.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dinning-table-tracks/:id",
+      "handler": "dinning-table-track.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
