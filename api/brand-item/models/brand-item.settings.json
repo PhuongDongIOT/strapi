@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_items",
+  "info": {
+    "name": "BrandItem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ShortName": {
+      "type": "string"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "brand_items": {
+      "collection": "brand-item",
+      "via": "brand_item"
+    },
+    "brand_item": {
+      "model": "brand-item",
+      "via": "brand_items"
+    },
+    "inventory_items": {
+      "via": "brand_item",
+      "collection": "inventory-item"
+    }
+  }
+}

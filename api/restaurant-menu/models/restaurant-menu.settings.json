@@ -18,6 +18,14 @@
     "classes": {
       "via": "restaurant_menus",
       "collection": "class"
+    },
+    "restaurant": {
+      "via": "restaurant_menus",
+      "model": "restaurant"
+    },
+    "restaurant_facility": {
+      "via": "restaurant_menus",
+      "model": "restaurant-facility"
     }
   }
 }

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_items",
+  "info": {
+    "name": "InventoryItem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "items": {
+      "collection": "item",
+      "via": "inventory_item"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "AverageMonthlyUsage": {
+      "type": "float"
+    },
+    "Level": {
+      "type": "integer"
+    },
+    "Quatity": {
+      "type": "float"
+    },
+    "brand_item": {
+      "model": "brand-item",
+      "via": "inventory_items"
+    },
+    "item_category": {
+      "model": "item-category",
+      "via": "inventory_items"
+    }
+  }
+}

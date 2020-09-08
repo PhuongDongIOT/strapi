@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurant_facilities",
+  "info": {
+    "name": "RestaurantFacility"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "restaurant_menus": {
+      "collection": "restaurant-menu",
+      "via": "restaurant_facility"
+    },
+    "restaurant": {
+      "model": "restaurant",
+      "via": "restaurant_facilities"
+    }
+  }
+}

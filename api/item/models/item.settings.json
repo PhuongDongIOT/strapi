@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "DateTime": {
+      "type": "date"
+    },
+    "FirstItem": {
+      "type": "float"
+    },
+    "LastItem": {
+      "type": "float"
+    },
+    "StandardPrice": {
+      "type": "float"
+    },
+    "PercentageDicount": {
+      "type": "integer"
+    },
+    "Min": {
+      "type": "float"
+    },
+    "Max": {
+      "type": "float"
+    },
+    "inventory_item": {
+      "via": "items",
+      "model": "inventory-item"
+    }
+  }
+}

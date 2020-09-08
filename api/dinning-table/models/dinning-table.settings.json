@@ -9,10 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "category": {
-      "model": "category",
-      "via": "dinning_tables"
-    },
     "ChairCount": {
       "type": "integer"
     },

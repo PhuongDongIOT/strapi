@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "menu_items",
   "info": {
-    "name": "MenuItem"
+    "name": "MenuFood"
   },
   "options": {
     "increments": true,

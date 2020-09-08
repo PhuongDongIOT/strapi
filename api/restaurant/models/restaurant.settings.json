@@ -15,10 +15,6 @@
     "description": {
       "type": "text"
     },
-    "category": {
-      "model": "category",
-      "via": "restaurants"
-    },
     "image": {
       "collection": "file",
       "via": "related",
@@ -27,6 +23,14 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "restaurant_menus": {
+      "collection": "restaurant-menu",
+      "via": "restaurant"
+    },
+    "restaurant_facilities": {
+      "via": "restaurant",
+      "collection": "restaurant-facility"
     }
   }
 }
