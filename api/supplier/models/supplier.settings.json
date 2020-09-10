@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "Supplier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "CellPhone": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "items": {
+      "via": "supplier",
+      "collection": "item"
+    },
+    "supplier_addresses": {
+      "via": "supplier",
+      "collection": "supplier-address"
+    }
+  }
+}

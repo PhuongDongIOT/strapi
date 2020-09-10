@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supp_address_types",
+  "info": {
+    "name": "SuppAddressType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "TypeCode": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "supplier_addresses": {
+      "via": "supp_address_type",
+      "collection": "supplier-address"
+    }
+  }
+}

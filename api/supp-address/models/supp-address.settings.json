@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supp_addresses",
+  "info": {
+    "name": "SuppAddress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Line1": {
+      "type": "string"
+    },
+    "Line2": {
+      "type": "string"
+    },
+    "Line3": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "ZipOrPostCode": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "supplier_addresses": {
+      "via": "supp_address",
+      "collection": "supplier-address"
+    }
+  }
+}

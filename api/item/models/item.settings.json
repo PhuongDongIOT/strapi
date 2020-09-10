@@ -37,8 +37,12 @@
       "type": "float"
     },
     "inventory_item": {
-      "via": "items",
-      "model": "inventory-item"
+      "model": "inventory-item",
+      "via": "items"
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "items"
     }
   }
 }

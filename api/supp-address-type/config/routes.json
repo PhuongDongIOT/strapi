@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/supp-address-types",
+      "handler": "supp-address-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/supp-address-types/count",
+      "handler": "supp-address-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/supp-address-types/:id",
+      "handler": "supp-address-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/supp-address-types",
+      "handler": "supp-address-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/supp-address-types/:id",
+      "handler": "supp-address-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/supp-address-types/:id",
+      "handler": "supp-address-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

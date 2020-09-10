@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supplier_addresses",
+  "info": {
+    "name": "SupplierAddress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "DateFrom": {
+      "type": "datetime"
+    },
+    "DateTo": {
+      "type": "datetime"
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "supplier_addresses"
+    },
+    "supp_address": {
+      "model": "supp-address",
+      "via": "supplier_addresses"
+    },
+    "supp_address_type": {
+      "model": "supp-address-type",
+      "via": "supplier_addresses"
+    }
+  }
+}

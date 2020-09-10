@@ -10,8 +10,8 @@
   },
   "attributes": {
     "items": {
-      "collection": "item",
-      "via": "inventory_item"
+      "via": "inventory_item",
+      "collection": "item"
     },
     "Description": {
       "type": "text"

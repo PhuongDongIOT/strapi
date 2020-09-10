@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/supp-addresses",
+      "handler": "supp-address.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/supp-addresses/count",
+      "handler": "supp-address.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/supp-addresses/:id",
+      "handler": "supp-address.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/supp-addresses",
+      "handler": "supp-address.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/supp-addresses/:id",
+      "handler": "supp-address.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/supp-addresses/:id",
+      "handler": "supp-address.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
